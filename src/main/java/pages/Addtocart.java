@@ -9,37 +9,37 @@ import newpackage.Ecommerce;
 
 public class Addtocart  extends Ecommerce
 {
-	
-	
-	
+
+
+
 
 		public Addtocart()
 		{
 			PageFactory.initElements(driver, this);
-			
+
 			}
-		
+
 		@FindBy(xpath="//*[@id=\"block_top_menu\"]/ul/li[3]/a")
 		WebElement addtocart;
-		
+
 		@FindBy(xpath="//*[@id=\"center_column\"]/ul/li/div/div[1]/div/a[1]")
 		WebElement shoppingcart;
-		
+
 		@FindBy(xpath="//*[@id=\"add_to_cart\"]/button/span")
 		WebElement add;
-		
-		
+
+
 		@FindBy(xpath="//*[@id=\"quantity_wanted_p\"]/a[2]/span/i")
 		WebElement quantity;
-		
-		
-		
+
+
+
 		@FindBy(xpath="//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
 		WebElement cart;
-		
-		
-		
-		
+
+
+
+
 		public void addtocart() throws Throwable
 		{
 			addtocart.click();
@@ -51,23 +51,23 @@ public class Addtocart  extends Ecommerce
 			add.click();
 			Thread.sleep(2000);
 			cart.click();
-			
-			
-			
-	        	  
+
+
+
+
 	          }
-			
+
 			}
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
 
 

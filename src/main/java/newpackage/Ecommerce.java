@@ -12,10 +12,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Ecommerce {
-	
+
 	 public static WebDriver driver;
 	 public static Properties Ecommerce;
-	
+
 	public Ecommerce()
 	 {
 		 Ecommerce =new Properties();
@@ -28,8 +28,8 @@ public class Ecommerce {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 
-		 
+
+
 	 }
 	 public void sear(String string)
 		{
@@ -44,10 +44,10 @@ public class Ecommerce {
 				WebDriverManager.firefoxdriver().setup();
 		        driver= new FirefoxDriver();
 				}
-			
-			
+
+
 			driver.get(Ecommerce.getProperty("url"));
 			driver.manage().window().maximize();
 			}
-	
+
 }
